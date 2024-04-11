@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PitStopPro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href=https://capstone-deployment-production.up.railway.app/ title="Deployment">
+            <img src="app_views/logo.png" alt="ProLink" style="height: 60px;">
+        </a>
+        <h1>Welcome to PitStopPro! </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="demo-video">
+        <h2>Demo Video(Coming Soon!)</h2>
+        <video controls>
+            <source src="path_to_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p> 
+            PitStopPro is your one stop shop for automating the managment of your automotive buisness. Using market research
+            as well as first hand experience in the industry , our team strives to deliver an out of the box product that will keep you 
+            wrenching, and not typing , as much as possible. Ignite your shop's potential today by clicking the logo at the top of the page!
+        </p>
+    </section>
+
+    <section id="app-info1">
+        <h2 id="animated-header1">Shop Management Made Seamless</h2>
+        <p> track employee, inventory , and customer loyalty data with ease using industry-insider crafted tools </p>
+        <div class="carousel" id = carousel1>
+            <img src="app_views/employees.png" alt="Employees Screenshot" class="carousel-item active">
+            <img src="app_views/rewards.png" alt="Rewards Screenshot" class="carousel-item">
+            <img src="app_views/inventory.png" alt="Inventory Screenshot" class="carousel-item">
+            <button class="prev" onclick="changeSlide(-1, 'carousel1')">&#10094;</button>
+            <button class="next" onclick="changeSlide(1, 'carousel1')">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="app-info2">
+        <h2 id="animated-header2">Rev Up Your Revenue</h2>
+        <p> Optimize workflow and boost your bottom line with integrated calendar, estimate, and scheduling features</p>
+        <div class="carousel" id = carousel2>
+            <img src="app_views/calendar.png" alt="Employees Screenshot" class="carousel-item active">
+            <img src="app_views/jobs.png" alt="Rewards Screenshot" class="carousel-item">
+            <img src="app_views/estimation.png" alt="Inventory Screenshot" class="carousel-item">
+            <button class="prev" onclick="changeSlide(-1, 'carousel2')">&#10094;</button>
+            <button class="next" onclick="changeSlide(1, 'carousel2')">&#10095;</button>
+    </div>
+        </div>
+    </section>
+
+    <section id="app-info3">
+        <h2 id="animated-header3">Dashboard for Success</h2>
+        <p> All your shop metrics, visibly displayed and easy to manage through our invoicing and report systems</p>
+        <div class="carousel" id = carousel3>
+            <img src="app_views/earnings.png" alt="Employees Screenshot" class="carousel-item active">
+            <img src="app_views/invoicing.png" alt="Rewards Screenshot" class="carousel-item">
+            <button class="prev" onclick="changeSlide(-1, 'carousel3')">&#10094;</button>
+            <button class="next" onclick="changeSlide(1, 'carousel3')">&#10095;</button>
+        </div>
+    </section>
+    
+    <footer>
+        <p>Check out our GitHub Repository!</p>
+        <a href="https://github.com/SCCapstone/Young_Binaries.git" title="Visit our GitHub Repository">
+            <img src="app_views/github-mark.png" alt="GitHub Logo" style="width: 30px; height: 30px;">
+        </a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
