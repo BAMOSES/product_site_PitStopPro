@@ -3,83 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - App Name</title>
+    <title>PitStopPro</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <header>
-        <a href=https://capstone-deployment-production.up.railway.app/ title="Deployment">
-            <img src="app_views/logo.png" alt="ProLink" style="height: 60px;">
+    <header id="main-header">
+        <a href="https://capstone-deployment-production.up.railway.app/" title="Deployment">
+            <img id="header-logo" src="app_views/logo-transparent.png" alt="ProLink">
         </a>
-        <h1>About Us</h1>
-        <nav>
+        <nav id="main-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li>|</li>
+                <li><a href="about.html">About Our Team</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="team-info">
-        <h2>Our Team:</h2>
-       
-       
-        <p><h1>Blaise Moses - Developer, Industry Consultant</h1>
-            <img src="pictures/blaise.jpeg" alt="profile pic" style="height: 60px;">
-            <p> 
-                I am a developer on the PitStopPro team and also the lead industry consultant. I leverage my 
-                background in the automotive industry (over 5 years as a technician and service writer) to identify 
-                customer needs and desires which I then translate into viable software solutions with the help of my team.
-            </p>
-        
-            <a href="https://www.linkedin.com/in/blaise-moses" title="Visit our GitHub Repository">
-            <img src="app_views/LI-In-Bug.png" alt="LinkedIn Logo" style="width: 30px; height: 30px;"></a>
-            <h1</h1>
-            
-            <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=bamoses2001@gmail.com&tf=1
-            "><img src="app_views/gmail.png" alt="Gmail Logo" style="width: 30px; height: 30px;"></a>
-        </p>
-            
+    <h1 id="about-title">Our Team</h1>
 
-        
-         <!-- Add yall's contact stuff, they're all set to mine rn ^^  -->
-        <p><h1>Danai Angelidis - Developer, Lead Project Manager</h1>
-            <img src="pictures/danai.jpeg" alt="profile pic" style="height: 60px;">
-            <p> 
-               your bio here
-            </p>
-            <a href="https://www.linkedin.com/in/blaise-moses" title="Visit our GitHub Repository">
-                <img src="app_views/LI-In-Bug.png" alt="LinkedIn Logo" style="width: 30px; height: 30px;"></a>
-                
+    <main id="about-main">
+        <section class="member">
+            <img class="member-img" src="pictures/blaise.jpeg" alt="profile pic">
+
+            <section class="member-text">
+                <h1>Blaise Moses</h1>
+                <h3>Industry Consultant</h3>
+                <p> 
+                    I am a developer on the PitStopPro team and also the lead industry consultant. I leverage my background of over 5 years as a technician and service writer to identify customer needs and desires which I then translate into viable software solutions with the help of my team.
+                </p>
+            
+                <a href="https://www.linkedin.com/in/blaise-moses" title="Visit our GitHub Repository">
+                    <img src="app_views/LI-In-Bug.png" alt="LinkedIn Logo" style="width: 30px; height: 30px;">
+                </a>
                 
                 <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=bamoses2001@gmail.com&tf=1
-                "><img src="app_views/gmail.png" alt="Gmail Logo" style="width: 30px; height: 30px;"></a>
-        </p>
-        <p><h1>Thomas Ferguson - Developer, Buisness Manager </h1>
-            <img src="pictures/thomas.jpeg" alt="profile pic" style="height: 60px;">
-            <p> 
-                your bio here
-             </p>
-        <a href="https://www.linkedin.com/in/blaise-moses" title="Visit our GitHub Repository">
-            <img src="app_views/LI-In-Bug.png" alt="LinkedIn Logo" style="width: 30px; height: 30px;"></a>
+                ">
+                    <img src="app_views/gmail.png" alt="Gmail Logo" style="width: 30px; height: 30px;">
+                </a>
+            </section>
+        </section>
             
-            
-            <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=bamoses2001@gmail.com&tf=1
-            "><img src="app_views/gmail.png" alt="Gmail Logo" style="width: 30px; height: 30px;"></a>
-        </p>
-        <p><h1>Will Columbia - Developer, Data Specialist</h1>
-            <img src="pictures/will.jpeg" alt="profile pic" style="height: 60px;">
-            <p> 
-                your bio here
-             </p>
-        <a href="https://www.linkedin.com/in/blaise-moses" title="Visit our GitHub Repository">
-            <img src="app_views/LI-In-Bug.png" alt="LinkedIn Logo" style="width: 30px; height: 30px;"></a>
-            
-            
-            <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=bamoses2001@gmail.com&tf=1
-            "><img src="app_views/gmail.png" alt="Gmail Logo" style="width: 30px; height: 30px;"></a>
-        </p>
-    </section>
+        <section class="member">
+            <img class="member-img" src="pictures/danai.jpeg" alt="profile pic">
+
+            <section class="member-text">
+                <h1>Danai Angelidis</h1>
+                <h3>Developer, Lead Project Manager</h3>
+                <p> 
+                    I am one of the developers and the lead project manager of the PitStopPro team. Aside from application design and development, my role includes team coordination and expectation communication in order to deliver the best possible application to our potential customers. 
+                </p>
+
+                <a href="https://www.linkedin.com/in/danai-angelidis">
+                    <img src="app_views/LI-In-Bug.png" alt="LinkedIn Logo" style="width: 30px; height: 30px;">
+                </a>
+
+                <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=angelidisdanai@gmail.com&tf=1
+                ">
+                    <img src="app_views/gmail.png" alt="Gmail Logo" style="width: 30px; height: 30px;">
+                </a>
+            </section>
+        </section>
+
+        <!-- Add yall's contact stuff, they're all set to mine rn ^^  -->
+        <section class="member">
+            <img class="member-img" src="pictures/thomas.jpeg" alt="profile pic">
+
+            <section class="member-text">
+                <h1>Thomas Ferguson</h1>
+                <h3>Developer, Buisness Manager</h3>
+                <p> 
+                    your bio here
+                </p>
+
+                <a href="https://www.linkedin.com/in/blaise-moses" title="Visit our GitHub Repository">
+                    <img src="app_views/LI-In-Bug.png" alt="LinkedIn Logo" style="width: 30px; height: 30px;">
+                </a>
+                
+                <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=bamoses2001@gmail.com&tf=1
+                ">
+                    <img src="app_views/gmail.png" alt="Gmail Logo" style="width: 30px; height: 30px;">
+                </a>
+            </section>
+        </section>
+
+        <section class="member">
+            <img class="member-img" src="pictures/will.jpeg" alt="profile pic">
+
+            <section class="member-text">
+                <h1>Will Columbia</h1>
+                <h3>Developer, Data Specialist</h3>
+                <p> 
+                    your bio here
+                </p>
+                <a href="https://www.linkedin.com/in/blaise-moses" title="Visit our GitHub Repository">
+                    <img src="app_views/LI-In-Bug.png" alt="LinkedIn Logo" style="width: 30px; height: 30px;">
+                </a>
+                    
+                <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=bamoses2001@gmail.com&tf=1
+                ">
+                    <img src="app_views/gmail.png" alt="Gmail Logo" style="width: 30px; height: 30px;">
+                </a>
+            </section>
+        </section>
+    </main>
 
     <footer>
         <p>Check out our GitHub Repository!</p>

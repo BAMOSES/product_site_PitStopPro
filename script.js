@@ -15,18 +15,35 @@ function changeSlide(direction, carouselId) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    const headers = document.querySelectorAll('h2[id^="animated-header"]'); // Select all h2 elements with IDs starting with 'animated-header'
+    const headers = document.querySelectorAll('h2[id^="animated-header"]');
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('animate'); // Add 'animate' class to start the animation
-                observer.unobserve(entry.target); // Optional: stop observing if you want the animation to occur only once
+                entry.target.classList.add('animate');
+                observer.unobserve(entry.target);
             }
         });
     }, {
-        threshold: 0.5 // Adjust if necessary to trigger the animation sooner or later as the element comes into view
+        threshold: 0.5
     });
 
-    headers.forEach(header => observer.observe(header)); // Start observing each header
+    headers.forEach(header => observer.observe(header));
 });
 
+
+window.onload = () => {
+    window.addEventListener('scroll', function() {
+        var element = document.querySelector('.fixed-element');
+        var headerHeight = document.querySelector('header').offsetHeight;
+        var content = document.querySelector('.content');
+        var scrollTop = window.scrollY;
+    
+        var fixedPoint = headerHeight + content.offsetTop;
+    
+        if (scrollTop > fixedPoint) {
+            element.classList.add('fixed');
+        } else {
+            element.classList.remove('fixed');
+        }
+    });
+}
