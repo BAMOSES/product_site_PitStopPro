@@ -75,7 +75,7 @@ body {
     display: flex;
     padding: 50px;
     margin: auto;
-    width: 60%;
+    width: 65%;
 }
 
 #text-container,
@@ -109,9 +109,15 @@ body {
 #app-info1,
 #app-info2,
 #app-info3 {
-    width: 70%;
+    width: 50%;
     margin: auto;
     padding: 50px;
+}
+
+#app-info1 p,
+#app-info2 p,
+#app-info3 p {
+    font-size: large;
 }
 
 #animated-header1,
@@ -198,8 +204,12 @@ body {
     text-align: right;
 }
 
-#demo-video{
+#demo-video {
     text-align: center;
+}
+
+#demo-video video {
+    width: 60%;
 }
 
 footer {
@@ -245,12 +255,16 @@ footer {
 /* Media Query */
 
 @media (max-width: 768px) {
-    .carousel, .carousel img {
+    .carousel,
+    .carousel img {
         width: 100%;
     }
 
-    #app-info1, #app-info2, #app-info3 {
+    #app-info1,
+    #app-info2,
+    #app-info3 {
         padding: 0;
+        width: 90%;
     }
 
     nav ul li {
@@ -258,17 +272,40 @@ footer {
         margin-top: 10px;
     }
 
-    .carousel .prev, .carousel .next {
+    .carousel .prev,
+    .carousel .next {
         width: 44px;
         padding: 5px;
     }
 
     #desc {
         display: block;
-        width: 70%;
+        width: 75%;
+    }
+
+    #text-container,
+    #button-container {
+        margin: auto;
+        padding: 0px 0px;
+    }
+
+    .carousel button {
+        top: 30%;
+    }
+
+    #about-main {
+        display: block;
     }
 
     .member {
-        width: 50%;
+        width: 100%;
+    }
+
+    .member-text {
+        width: 80%;
+    }
+
+    #demo-video video {
+        width: 90%;
     }
 }
