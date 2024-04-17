@@ -117,7 +117,7 @@ body {
 #app-info1 p,
 #app-info2 p,
 #app-info3 p {
-    font-size: large;
+    font-size: 15pt;
 }
 
 #animated-header1,
@@ -208,8 +208,12 @@ body {
     text-align: center;
 }
 
+#demo-video h2 {
+    font-size: 23pt;
+}
+
 #demo-video video {
-    width: 60%;
+    width: 50%;
 }
 
 footer {
